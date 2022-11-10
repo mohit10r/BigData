@@ -1,0 +1,160 @@
+Q1. Why do we call Python as a general purpose and high-level programming language?
+Ans : Python is a high-level general-purpose programming language that can be applied to many different classes of problems.
+The language comes with a large standard library that covers areas such as string processing (regular expressions, Unicode, calculating differences between files), internet protocols (HTTP, FTP, SMTP, XML-RPC, POP, IMAP), software engineering (unit testing, logging, profiling, parsing Python code), and operating system interfaces (system calls, filesystems, TCP/IP sockets). 
+
+Q2. Why is Python called a dynamically typed language?
+Ans: Python is a dynamically typed language because there is no declaration of a variable, just an assignment statement in Python. It doesn’t know about the type of the variable until the code is run. 
+
+Q3. List some pros and cons of Python programming language?
+Ans: Pros: Python is easy to learn and read
+           Python has a vast collection of libraries
+           Python is free, open-source, and has a vibrant community
+           Python is a portable programming language
+           Python is an interpreted language
+    
+    Cons: Python has speed limitations
+          Python is not so strong with mobile computing
+          Python can have runtime errors
+          Python consumes a lot of memory space
+          Python is not easy to test
+
+Q4. In what all domains can we use Python?
+Ans: Python can be used in string processing (regular expressions, Unicode, calculating differences between files), internet protocols (HTTP, FTP, SMTP, XML-RPC, POP, IMAP), software engineering (unit testing, logging, profiling, parsing Python code), and operating system interfaces (system calls, filesystems, TCP/IP sockets).
+
+Q5. What are variable and how can we declare them?
+Ans: Variables are used to store data in memory location in Python. Since Python is a dynamically typed language, a variable does not need a type while declaration.
+A variable can be declared and used as such, a='I am a variable.'
+
+Q6. How can we take an input from the user in Python?
+Ans: Input can be read from a user by using the 'input()' function. This prmopts user to enter an input to the user.
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+Ans: String.
+
+Q8. What is type casting?
+Ans: Changing the datatype of a variable is called type-casting. e.g: y = int(2.8)
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+Ans: Python user can take multiple values or inputs in one line by two methods. 
+Using split() method : input().split(separator, maxsplit)
+Using List comprehension : x = [int(x) for x in input("Enter multiple value: ").split(",")]
+                            print("Number of list is: ", x) 
+
+Q10. What are keywords?
+Ans: Python has a set of keywords that are reserved words that cannot be used as variable names, function names, or any other identifiers, such reserved words are called Keywords.
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+Ans: Keywords cannot be used as a variable name. As keywords are reserved words and using a keyword as a variable would throw an error, as this would mean assigning a memory location to a reserved keyword.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+Ans: Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only. Python uses indentation to indicate a block of code.
+
+
+Q13. How can we throw some output in Python?
+Ans: output can be shown using print() function.
+
+
+Q14. What are operators in Python?
+Ans: Operators are used to perform operations on variables and values.
+
+
+Q15. What is difference between / and // operators?
+Ans: '/' is the division operator.
+     '//' is the floor division operator.
+
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+Ans: word = 'iNeuron'
+     print(word*4)
+
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans: number = int(input('Enter a number'))
+     if number%2==0:
+        print('Number is Even')
+     else:
+        print('Number is Odd')
+
+
+Q18. What are boolean operator?
+Ans: The Python Boolean type is one of Python’s built-in data types. It’s used to represent the truth value of an expression.
+
+Q19. What will the output of the following?
+```
+1 or 0
+
+0 and 0
+
+True and False and True
+
+1 or 0 or 0
+```
+Ans: 1
+     0
+     False
+     1
+
+
+Q20. What are conditional statements in Python?  
+Ans: if else elif statements are used as conditional statements in Python.
+
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+Ans: The 'if', 'elif' and 'else' are used as conditional statements in Python.
+
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+Ans: age = int(input('Enter the age'))
+     if age >=18:
+        print("I can vote")
+     else:
+        print("I can't vote")
+
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+Ans: numbers = [12, 75, 150, 180, 145, 525, 50]
+     even_list = []
+     for num in numbers:
+        if num%2 == 0:
+            even_list.append(num)
+     print(sum(even_list)) 
+
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+Ans: num1 = float(input("Enter first number: "))
+     num2 = float(input("Enter second number: "))
+     num3 = float(input("Enter third number: "))
+
+     if (num1 >= num2) and (num1 >= num3):
+         largest = num1
+     elif (num2 >= num1) and (num2 >= num3):
+         largest = num2
+     else:
+         largest = num3
+
+     print("The largest number is", largest)
+
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+Ans: numbers = [12, 75, 150, 180, 145, 525, 50]
+     for num in numbers:
+        if num%5==0:
+            if num>150:
+                if num>500:
+                    break
+                continue    
